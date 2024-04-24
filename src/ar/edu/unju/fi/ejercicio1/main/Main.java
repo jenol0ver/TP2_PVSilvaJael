@@ -54,8 +54,7 @@ public class Main {
 			        sc.next(); 
 				}
 	} while (!ingresoCorrecto);
-
+		//esto es pata probar jeje
 	}
 	}
 
-}
