@@ -3,7 +3,7 @@ package ar.edu.unju.fi.ejercicio1.model;
 public class Producto {
 	private String codigo;
 	private String descripcion;
-	private double precioUnitario;
+	private double precioU;
 	private OrigenFabricacion origenFab;
 	private Categoria categoria;
 	
@@ -12,10 +12,10 @@ public class Producto {
 	}
 
 	public enum OrigenFabricacion{
-		ARGENTINA,CHINA,BRASIL,URUGUAY
+		ARGENTINA, CHINA, BRASIL, URUGUAY
 	}
 	public enum Categoria{
-		TELEFONIA,INFORMATICA,ELECTROHOGAR,HERRAMIENTAS
+		TELEFONIA, INFORMATICA, ELECTROHOGAR, HERRAMIENTAS
 	}
 	
 	public String getCodigo() {
@@ -30,11 +30,11 @@ public class Producto {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	public double getPrecioUnitario() {
-		return precioUnitario;
+	public double getPrecioU() {
+		return precioU;
 	}
-	public void setPrecioUnitario(double precioUnitario) {
-		this.precioUnitario = precioUnitario;
+	public void setPrecioUnitario(double precioU) {
+		this.precioU = precioU;
 	}
 	public OrigenFabricacion getOrigenFab() {
 		return origenFab;
@@ -48,18 +48,18 @@ public class Producto {
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
-	public Producto(String codigo, String descripcion, double precioUnitario, OrigenFabricacion origenFab,
+	public Producto(String codigo, String descripcion, double precioU, OrigenFabricacion origenFab,
 			Categoria categoria) {
 		this.codigo = codigo;
 		this.descripcion = descripcion;
-		this.precioUnitario = precioUnitario;
+		this.precioU = precioU;
 		this.origenFab = origenFab;
 		this.categoria = categoria;
 	}
 	
 	@Override
 	public String toString() {
-		return "Producto [codigo=" + codigo + ", descripcion=" + descripcion + ", precioUnitario=" + precioUnitario
+		return "Producto [codigo=" + codigo + ", descripcion=" + descripcion + ", precioUnitario=" + precioU
 				+ ", origenFab=" + origenFab + ", categoria=" + categoria + "]";
 	}
 	
